@@ -1,0 +1,27 @@
+{
+  "name": "ritual-jigsaw",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "generate:puzzles": "node scripts/generate-puzzle-manifest.mjs",
+    "dev": "npm run generate:puzzles && vite --host 0.0.0.0",
+    "build": "npm run generate:puzzles && tsc -b && vite build",
+    "deploy:bytecode": "node scripts/deploy-remix-bytecode.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "npm run generate:puzzles && tsc -b"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.21.58"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

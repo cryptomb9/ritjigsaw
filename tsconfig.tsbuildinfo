@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/abi/puzzlecompletion.ts","./src/components/completionpanel.tsx","./src/components/jigsawgame.tsx","./src/components/leaderboard.tsx","./src/components/puzzlepicker.tsx","./src/components/walletpanel.tsx","./src/generated/puzzlemanifest.ts","./src/lib/puzzle.ts","./src/lib/ritual.ts"],"version":"5.9.3"}
