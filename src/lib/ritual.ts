@@ -23,7 +23,7 @@ export const RITUAL_RPC_URL =
 
 export const ritualChain = defineChain({
   id: 1979,
-  name: "Ritual",
+  name: "RITUAL TESTNET",
   nativeCurrency: {
     decimals: 18,
     name: "RITUAL",
@@ -45,9 +45,9 @@ export const ritualChain = defineChain({
 
 const RITUAL_CHAIN_PARAMS = {
   chainId: RITUAL_CHAIN_ID_HEX,
-  chainName: "Ritual",
+  chainName: "RITUAL TESTNET",
   nativeCurrency: {
-    name: "Ritual",
+    name: "RITUAL",
     symbol: "RITUAL",
     decimals: 18,
   },
@@ -307,15 +307,15 @@ function getWalletErrorMessage(error: unknown): string {
   const code = getErrorCode(error);
 
   if (code === 4001) {
-    return "Wallet connected, but Ritual network switch was rejected.";
+    return "Wallet connected, but RITUAL TESTNET network switch was rejected.";
   }
 
   const message = getErrorText(error);
   if (message.length > 0) {
-    return `Wallet connected, but Ritual network switch failed: ${message}`;
+    return `Wallet connected, but RITUAL TESTNET network switch failed: ${message}`;
   }
 
-  return "Wallet connected, but Ritual network switch failed. Add Ritual manually if submit fails.";
+  return "Wallet connected, but RITUAL TESTNET network switch failed. Add RITUAL TESTNET manually if submit fails.";
 }
 
 async function readWalletChainId(provider: EthereumProvider): Promise<string | null> {
