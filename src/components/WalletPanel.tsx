@@ -1,6 +1,7 @@
 import { Puzzle, Trophy, Wallet } from "lucide-react";
 import type { Address } from "viem";
 import { hasPuzzleContract, puzzleContractAddress, shortAddress } from "../lib/ritual";
+import { MusicControl } from "./MusicControl";
 
 type WalletPanelProps = {
   address: Address | null;
@@ -48,6 +49,8 @@ export function WalletPanel({
             <strong>{activeView === "leaderboard" ? "Game" : "Leaderboard"}</strong>
           </div>
         </button>
+
+        <MusicControl />
 
         <div className="connection-item">
           <Wallet size={18} />

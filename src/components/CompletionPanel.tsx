@@ -57,7 +57,8 @@ export function CompletionPanel({
 
       <button className="primary-button wide" type="button" onClick={onSubmit} disabled={!canSubmit}>
         <Send size={18} />
-        Submit Completion
+        <span className="submit-label-full">Submit Completion</span>
+        <span className="submit-label-short">Submit</span>
       </button>
 
       {message ? <p className={`inline-alert ${phase === "error" ? "danger" : "neutral"}`}>{message}</p> : null}

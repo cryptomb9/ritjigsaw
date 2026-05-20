@@ -189,7 +189,7 @@ export default function App() {
   }
 
   return (
-    <main className="app-shell">
+    <main className={`app-shell ${gameStarted && activeView === "game" ? "in-game-room" : ""}`}>
       <WalletPanel
         address={address}
         balance={balance}

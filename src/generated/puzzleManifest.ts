@@ -12,223 +12,353 @@ export type GeneratedPuzzleManifestEntry = {
 
 export const GENERATED_PUZZLE_MANIFEST = [
   {
-    "id": 1,
+    "id": 68236792,
     "title": "1",
-    "imageUrl": "/puzzles/ritual-placeholder.svg",
+    "imageUrl": "/puzzles/20260520_144153.jpg.jpeg",
     "imageAlt": "Puzzle 1 image",
-    "imageURI": "ritual-placeholder-v1",
+    "imageURI": "20260520_144153.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:ritual-placeholder:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_144153.jpg.jpeg:4x4"
   },
   {
-    "id": 547326438,
+    "id": 161749790,
     "title": "2",
-    "imageUrl": "/puzzles/IMG-20260518-WA0014.jpg",
+    "imageUrl": "/puzzles/20260518_213218.jpg.jpeg",
     "imageAlt": "Puzzle 2 image",
-    "imageURI": "IMG-20260518-WA0014.jpg",
+    "imageURI": "20260518_213218.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0014.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_213218.jpg.jpeg:4x4"
   },
   {
-    "id": 722029531,
+    "id": 319157477,
     "title": "3",
-    "imageUrl": "/puzzles/IMG-20260518-WA0013.jpg",
+    "imageUrl": "/puzzles/20260518_205939.jpg.jpeg",
     "imageAlt": "Puzzle 3 image",
-    "imageURI": "IMG-20260518-WA0013.jpg",
+    "imageURI": "20260518_205939.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0013.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_205939.jpg.jpeg:4x4"
   },
   {
-    "id": 1071336442,
+    "id": 392778043,
     "title": "4",
-    "imageUrl": "/puzzles/IMG-20260518-WA0032.jpg",
+    "imageUrl": "/puzzles/20260520_152751.jpg.jpeg",
     "imageAlt": "Puzzle 4 image",
-    "imageURI": "IMG-20260518-WA0032.jpg",
+    "imageURI": "20260520_152751.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0032.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152751.jpg.jpeg:4x4"
   },
   {
-    "id": 1356105455,
+    "id": 417774398,
     "title": "5",
-    "imageUrl": "/puzzles/IMG-20260518-WA0017.jpg",
+    "imageUrl": "/puzzles/20260520_143558.jpg.jpeg",
     "imageAlt": "Puzzle 5 image",
-    "imageURI": "IMG-20260518-WA0017.jpg",
+    "imageURI": "20260520_143558.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0017.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_143558.jpg.jpeg:4x4"
   },
   {
-    "id": 1455065780,
+    "id": 459733710,
     "title": "6",
-    "imageUrl": "/puzzles/IMG-20260518-WA0030.jpg",
+    "imageUrl": "/puzzles/20260520_142957.jpg.jpeg",
     "imageAlt": "Puzzle 6 image",
-    "imageURI": "IMG-20260518-WA0030.jpg",
+    "imageURI": "20260520_142957.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0030.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_142957.jpg.jpeg:4x4"
   },
   {
-    "id": 1798280803,
+    "id": 744312728,
     "title": "7",
-    "imageUrl": "/puzzles/IMG-20260518-WA0031.jpg",
+    "imageUrl": "/puzzles/20260520_144041.jpg.jpeg",
     "imageAlt": "Puzzle 7 image",
-    "imageURI": "IMG-20260518-WA0031.jpg",
+    "imageURI": "20260520_144041.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0031.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_144041.jpg.jpeg:4x4"
   },
   {
-    "id": 1869453449,
+    "id": 869748960,
     "title": "8",
-    "imageUrl": "/puzzles/IMG-20260518-WA0033.jpg",
+    "imageUrl": "/puzzles/20260520_143912.jpg.jpeg",
     "imageAlt": "Puzzle 8 image",
-    "imageURI": "IMG-20260518-WA0033.jpg",
+    "imageURI": "20260520_143912.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0033.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_143912.jpg.jpeg:4x4"
   },
   {
-    "id": 2518357022,
+    "id": 948265831,
     "title": "9",
-    "imageUrl": "/puzzles/IMG-20260518-WA0025.jpg",
+    "imageUrl": "/puzzles/20260520_143739.jpg.jpeg",
     "imageAlt": "Puzzle 9 image",
-    "imageURI": "IMG-20260518-WA0025.jpg",
+    "imageURI": "20260520_143739.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0025.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_143739.jpg.jpeg:4x4"
   },
   {
-    "id": 2656706291,
+    "id": 1056194710,
     "title": "10",
-    "imageUrl": "/puzzles/IMG-20260518-WA0022.jpg",
+    "imageUrl": "/puzzles/20260520_152127.jpg.jpeg",
     "imageAlt": "Puzzle 10 image",
-    "imageURI": "IMG-20260518-WA0022.jpg",
+    "imageURI": "20260520_152127.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0022.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152127.jpg.jpeg:4x4"
   },
   {
-    "id": 2786010445,
+    "id": 1061734877,
     "title": "11",
-    "imageUrl": "/puzzles/IMG-20260518-WA0024.jpg",
+    "imageUrl": "/puzzles/20260518_210021.jpg.jpeg",
     "imageAlt": "Puzzle 11 image",
-    "imageURI": "IMG-20260518-WA0024.jpg",
+    "imageURI": "20260518_210021.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0024.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_210021.jpg.jpeg:4x4"
   },
   {
-    "id": 2968710724,
+    "id": 1230764842,
     "title": "12",
-    "imageUrl": "/puzzles/IMG-20260518-WA0023.jpg",
+    "imageUrl": "/puzzles/20260518_213540.jpg.jpeg",
     "imageAlt": "Puzzle 12 image",
-    "imageURI": "IMG-20260518-WA0023.jpg",
+    "imageURI": "20260518_213540.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0023.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_213540.jpg.jpeg:4x4"
   },
   {
-    "id": 3079426330,
+    "id": 1509748729,
     "title": "13",
-    "imageUrl": "/puzzles/IMG-20260518-WA0018.jpg",
+    "imageUrl": "/puzzles/20260518_213330.jpg.jpeg",
     "imageAlt": "Puzzle 13 image",
-    "imageURI": "IMG-20260518-WA0018.jpg",
+    "imageURI": "20260518_213330.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0018.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_213330.jpg.jpeg:4x4"
   },
   {
-    "id": 3226326104,
+    "id": 1575819351,
     "title": "14",
-    "imageUrl": "/puzzles/IMG-20260518-WA0027.jpg",
+    "imageUrl": "/puzzles/20260520_152823.jpg.jpeg",
     "imageAlt": "Puzzle 14 image",
-    "imageURI": "IMG-20260518-WA0027.jpg",
+    "imageURI": "20260520_152823.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0027.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152823.jpg.jpeg:4x4"
   },
   {
-    "id": 3583574133,
+    "id": 1615491617,
     "title": "15",
-    "imageUrl": "/puzzles/IMG-20260518-WA0015.jpg",
+    "imageUrl": "/puzzles/20260520_143940.jpg.jpeg",
     "imageAlt": "Puzzle 15 image",
-    "imageURI": "IMG-20260518-WA0015.jpg",
+    "imageURI": "20260520_143940.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0015.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_143940.jpg.jpeg:4x4"
   },
   {
-    "id": 3680575769,
+    "id": 1616087635,
     "title": "16",
-    "imageUrl": "/puzzles/IMG-20260518-WA0020.jpg",
+    "imageUrl": "/puzzles/20260518_213556.jpg.jpeg",
     "imageAlt": "Puzzle 16 image",
-    "imageURI": "IMG-20260518-WA0020.jpg",
+    "imageURI": "20260518_213556.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0020.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_213556.jpg.jpeg:4x4"
   },
   {
-    "id": 3819110688,
+    "id": 1649535731,
     "title": "17",
-    "imageUrl": "/puzzles/IMG-20260518-WA0016.jpg",
+    "imageUrl": "/puzzles/20260518_210632.jpg.jpeg",
     "imageAlt": "Puzzle 17 image",
-    "imageURI": "IMG-20260518-WA0016.jpg",
+    "imageURI": "20260518_210632.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0016.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_210632.jpg.jpeg:4x4"
   },
   {
-    "id": 3819805681,
+    "id": 1702396034,
     "title": "18",
-    "imageUrl": "/puzzles/IMG-20260518-WA0028.jpg",
+    "imageUrl": "/puzzles/20260518_211722.jpg.jpeg",
     "imageAlt": "Puzzle 18 image",
-    "imageURI": "IMG-20260518-WA0028.jpg",
+    "imageURI": "20260518_211722.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0028.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_211722.jpg.jpeg:4x4"
   },
   {
-    "id": 3835966633,
+    "id": 1790316888,
     "title": "19",
-    "imageUrl": "/puzzles/IMG-20260518-WA0019.jpg",
+    "imageUrl": "/puzzles/IMG-20260413-WA0003.jpg.jpeg",
     "imageAlt": "Puzzle 19 image",
-    "imageURI": "IMG-20260518-WA0019.jpg",
+    "imageURI": "IMG-20260413-WA0003.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0019.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:IMG-20260413-WA0003.jpg.jpeg:4x4"
   },
   {
-    "id": 3865144839,
+    "id": 1990854770,
     "title": "20",
-    "imageUrl": "/puzzles/IMG-20260518-WA0026.jpg",
+    "imageUrl": "/puzzles/20260520_152057.jpg.jpeg",
     "imageAlt": "Puzzle 20 image",
-    "imageURI": "IMG-20260518-WA0026.jpg",
+    "imageURI": "20260520_152057.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0026.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152057.jpg.jpeg:4x4"
   },
   {
-    "id": 3991893770,
+    "id": 2173075329,
     "title": "21",
-    "imageUrl": "/puzzles/IMG-20260518-WA0021.jpg",
+    "imageUrl": "/puzzles/20260518_205618.jpg.jpeg",
     "imageAlt": "Puzzle 21 image",
-    "imageURI": "IMG-20260518-WA0021.jpg",
+    "imageURI": "20260518_205618.jpg.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0021.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:20260518_205618.jpg.jpeg:4x4"
   },
   {
-    "id": 4179192962,
+    "id": 2456734588,
     "title": "22",
-    "imageUrl": "/puzzles/IMG-20260518-WA0029.jpg",
+    "imageUrl": "/puzzles/WhatsApp%20Image%202026-05-20%20at%207.43.50%20PM.jpeg",
     "imageAlt": "Puzzle 22 image",
-    "imageURI": "IMG-20260518-WA0029.jpg",
+    "imageURI": "WhatsApp Image 2026-05-20 at 7.43.50 PM.jpeg",
     "rows": 4,
     "cols": 4,
-    "layoutSeed": "ritual-jigsaw:v1:IMG-20260518-WA0029.jpg:4x4"
+    "layoutSeed": "ritual-jigsaw:v1:WhatsApp Image 2026-05-20 at 7.43.50 PM.jpeg:4x4"
+  },
+  {
+    "id": 2561550681,
+    "title": "23",
+    "imageUrl": "/puzzles/20260520_151903.jpg.jpeg",
+    "imageAlt": "Puzzle 23 image",
+    "imageURI": "20260520_151903.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_151903.jpg.jpeg:4x4"
+  },
+  {
+    "id": 2611667053,
+    "title": "24",
+    "imageUrl": "/puzzles/20260520_152726.jpg.jpeg",
+    "imageAlt": "Puzzle 24 image",
+    "imageURI": "20260520_152726.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152726.jpg.jpeg:4x4"
+  },
+  {
+    "id": 2728372838,
+    "title": "25",
+    "imageUrl": "/puzzles/20260520_152112.jpg.jpeg",
+    "imageAlt": "Puzzle 25 image",
+    "imageURI": "20260520_152112.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152112.jpg.jpeg:4x4"
+  },
+  {
+    "id": 2885040746,
+    "title": "26",
+    "imageUrl": "/puzzles/20260520_144209.jpg.jpeg",
+    "imageAlt": "Puzzle 26 image",
+    "imageURI": "20260520_144209.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_144209.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3275479759,
+    "title": "27",
+    "imageUrl": "/puzzles/20260518_210445.jpg.jpeg",
+    "imageAlt": "Puzzle 27 image",
+    "imageURI": "20260518_210445.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260518_210445.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3485166388,
+    "title": "28",
+    "imageUrl": "/puzzles/20260518_205545.jpg.jpeg",
+    "imageAlt": "Puzzle 28 image",
+    "imageURI": "20260518_205545.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260518_205545.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3495649700,
+    "title": "29",
+    "imageUrl": "/puzzles/20260520_143927.jpg.jpeg",
+    "imageAlt": "Puzzle 29 image",
+    "imageURI": "20260520_143927.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_143927.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3629946004,
+    "title": "30",
+    "imageUrl": "/puzzles/20260520_152024.jpg.jpeg",
+    "imageAlt": "Puzzle 30 image",
+    "imageURI": "20260520_152024.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_152024.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3646946770,
+    "title": "31",
+    "imageUrl": "/puzzles/20260520_151935.jpg.jpeg",
+    "imageAlt": "Puzzle 31 image",
+    "imageURI": "20260520_151935.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_151935.jpg.jpeg:4x4"
+  },
+  {
+    "id": 3976937740,
+    "title": "32",
+    "imageUrl": "/puzzles/20260518_205826.jpg.jpeg",
+    "imageAlt": "Puzzle 32 image",
+    "imageURI": "20260518_205826.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260518_205826.jpg.jpeg:4x4"
+  },
+  {
+    "id": 4219289513,
+    "title": "33",
+    "imageUrl": "/puzzles/20260520_151833.jpg.jpeg",
+    "imageAlt": "Puzzle 33 image",
+    "imageURI": "20260520_151833.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_151833.jpg.jpeg:4x4"
+  },
+  {
+    "id": 4246813594,
+    "title": "34",
+    "imageUrl": "/puzzles/20260518_212451.jpg.jpeg",
+    "imageAlt": "Puzzle 34 image",
+    "imageURI": "20260518_212451.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260518_212451.jpg.jpeg:4x4"
+  },
+  {
+    "id": 4266264220,
+    "title": "35",
+    "imageUrl": "/puzzles/20260520_144113.jpg.jpeg",
+    "imageAlt": "Puzzle 35 image",
+    "imageURI": "20260520_144113.jpg.jpeg",
+    "rows": 4,
+    "cols": 4,
+    "layoutSeed": "ritual-jigsaw:v1:20260520_144113.jpg.jpeg:4x4"
   }
 ] as const satisfies readonly GeneratedPuzzleManifestEntry[];

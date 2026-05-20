@@ -108,7 +108,7 @@ button:disabled {
 
 .connection-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(118px, 1fr)) auto;
+  grid-template-columns: repeat(5, minmax(118px, 1fr)) auto;
   gap: 10px;
   align-items: stretch;
 }
@@ -162,6 +162,10 @@ button.connection-item {
   font-size: 0.86rem;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+}
+
+.music-toggle {
+  min-width: 0;
 }
 
 .dot {
@@ -252,6 +256,10 @@ button.connection-item {
 
 .wide {
   width: 100%;
+}
+
+.submit-label-short {
+  display: none;
 }
 
 .selection-screen,
@@ -1094,33 +1102,178 @@ dd {
 }
 
 @media (max-width: 900px) and (orientation: portrait) {
-  .game-room .game-layout,
-  .game-room .submit-panel {
+  .app-shell.in-game-room {
+    width: 100svw;
+    height: 100svh;
+    min-height: 100svh;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .app-shell.in-game-room .top-panel,
+  .app-shell.in-game-room .site-credit {
     display: none;
   }
 
-  .game-room-bar {
-    min-height: 220px;
-    padding: 16px;
-    align-content: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.82);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 8px;
+  .app-shell.in-game-room .game-room {
+    position: fixed;
+    inset: 0;
+    width: 100svh;
+    height: 100svw;
+    padding: 6px;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    gap: 6px;
+    overflow: hidden;
+    transform: rotate(90deg) translateY(-100svw);
+    transform-origin: top left;
+    background:
+      radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.08), transparent 28%),
+      #050505;
   }
 
-  .orientation-hint {
-    color: #f3f4f6;
-    font-size: 1rem;
-    line-height: 1.35;
+  .app-shell.in-game-room .game-room-bar {
+    min-height: 34px;
+    display: grid;
+    grid-template-columns: 86px minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+  }
+
+  .app-shell.in-game-room .game-room-bar .secondary-button {
+    width: auto;
+    min-height: 34px;
+    padding: 0 8px;
+    font-size: 0.74rem;
+  }
+
+  .app-shell.in-game-room .orientation-hint {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  .app-shell.in-game-room .game-layout {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(82px, 0.5fr) minmax(250px, min(54svh, calc(100svw - 102px))) minmax(82px, 0.5fr);
+    gap: 6px;
+    align-items: start;
+  }
+
+  .app-shell.in-game-room .stat-panel {
+    grid-column: 1;
+    order: 0;
+  }
+
+  .app-shell.in-game-room .board-column {
+    grid-column: 2;
+    order: 0;
+  }
+
+  .app-shell.in-game-room .pieces-panel {
+    grid-column: 3;
+    order: 0;
+    max-height: calc(100svw - 92px);
+  }
+
+  .app-shell.in-game-room .panel,
+  .app-shell.in-game-room .submit-panel {
+    padding: 6px;
+  }
+
+  .app-shell.in-game-room .panel-header,
+  .app-shell.in-game-room .board-header {
+    min-height: 28px;
+  }
+
+  .app-shell.in-game-room .art-preview {
+    margin-top: 4px;
+    max-height: min(24svh, calc(100svw - 188px));
+  }
+
+  .app-shell.in-game-room .art-preview img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .app-shell.in-game-room .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .app-shell.in-game-room .stats-grid div,
+  .app-shell.in-game-room .completion-stats div {
+    min-height: 30px;
+    padding: 5px;
+  }
+
+  .app-shell.in-game-room dt {
+    font-size: 0.6rem;
+  }
+
+  .app-shell.in-game-room dd {
+    margin-top: 1px;
+    font-size: 0.76rem;
+  }
+
+  .app-shell.in-game-room .board-grid {
+    width: min(54svh, calc(100svw - 102px));
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4px;
+    gap: 2px;
+  }
+
+  .app-shell.in-game-room .piece-tray {
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .app-shell.in-game-room .tray-piece {
+    min-width: 32px;
+  }
+
+  .app-shell.in-game-room .submit-panel {
+    grid-template-columns: minmax(112px, 0.55fr) minmax(198px, 1fr) minmax(124px, 0.42fr);
+    gap: 6px;
+  }
+
+  .app-shell.in-game-room .submit-panel .primary-button {
+    grid-column: auto;
+  }
+
+  .app-shell.in-game-room .completion-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .app-shell.in-game-room .submit-status {
+    gap: 7px;
+  }
+
+  .app-shell.in-game-room .submit-label-full {
+    display: none;
+  }
+
+  .app-shell.in-game-room .submit-label-short {
+    display: inline;
   }
 }
 
 @media (max-height: 620px) and (orientation: landscape) {
   .app-shell {
-    width: calc(100vw - 16px);
-    padding: 8px 0;
-    gap: 8px;
+    width: calc(100vw - 12px);
+    padding: 6px 0;
+    gap: 6px;
+  }
+
+  .app-shell.in-game-room .top-panel {
+    display: none;
   }
 
   .top-panel {
@@ -1134,7 +1287,7 @@ dd {
   }
 
   .connection-strip {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 6px;
   }
 
@@ -1162,7 +1315,7 @@ dd {
   }
 
   .game-room {
-    gap: 8px;
+    gap: 6px;
   }
 
   .game-room-bar {
@@ -1174,8 +1327,8 @@ dd {
   }
 
   .game-room .game-layout {
-    grid-template-columns: minmax(128px, 0.6fr) minmax(260px, min(45vw, calc(100svh - 184px))) minmax(160px, 0.78fr);
-    gap: 8px;
+    grid-template-columns: minmax(86px, 0.52fr) minmax(260px, min(58vw, calc(100svh - 132px))) minmax(86px, 0.52fr);
+    gap: 6px;
     align-items: start;
   }
 
@@ -1196,7 +1349,7 @@ dd {
 
   .game-room .panel,
   .game-room .submit-panel {
-    padding: 8px;
+    padding: 6px;
   }
 
   .panel-header,
@@ -1205,46 +1358,61 @@ dd {
   }
 
   .art-preview {
-    margin-top: 6px;
+    margin-top: 4px;
+    max-height: min(29vw, calc(100svh - 210px));
+  }
+
+  .art-preview img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px;
-    margin-top: 6px;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 4px;
   }
 
   .stats-grid div,
   .completion-stats div {
-    min-height: 42px;
-    padding: 7px;
+    min-height: 32px;
+    padding: 5px;
+  }
+
+  dt {
+    font-size: 0.62rem;
+  }
+
+  dd {
+    margin-top: 2px;
+    font-size: 0.78rem;
   }
 
   .board-grid {
-    width: min(45vw, calc(100svh - 184px));
+    width: min(58vw, calc(100svh - 132px));
     max-width: 100%;
     margin: 0 auto;
-    padding: 5px;
+    padding: 4px;
     gap: 2px;
   }
 
   .game-room .pieces-panel {
-    max-height: calc(100svh - 146px);
+    max-height: calc(100svh - 96px);
   }
 
   .piece-tray {
-    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
-    gap: 6px;
-    margin-top: 6px;
+    grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+    gap: 4px;
+    margin-top: 4px;
   }
 
   .tray-piece {
-    min-width: 44px;
+    min-width: 34px;
   }
 
   .game-room .submit-panel {
-    grid-template-columns: minmax(160px, 0.75fr) minmax(220px, 1fr) minmax(150px, 0.45fr);
-    gap: 8px;
+    grid-template-columns: minmax(120px, 0.56fr) minmax(210px, 1fr) minmax(130px, 0.44fr);
+    gap: 6px;
   }
 
   .game-room .submit-panel .primary-button {
@@ -1258,6 +1426,14 @@ dd {
 
   .submit-status {
     gap: 8px;
+  }
+
+  .game-room .submit-label-full {
+    display: none;
+  }
+
+  .game-room .submit-label-short {
+    display: inline;
   }
 }
 
