@@ -34,7 +34,7 @@ export const DEFAULT_LAYOUT_SEED = "ritual-jigsaw:v1:ritual-placeholder:4x4";
 
 export const DEFAULT_PUZZLE: PuzzleDefinition = {
   id: 1n,
-  title: "Ritual Jigsaw",
+  title: "Ritual Block Puzzle",
   imageUrl: "/puzzles/ritual-placeholder.svg",
   imageAlt: "Ritual themed geometric puzzle artwork",
   imageURI: "ritual-placeholder-v1",

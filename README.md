@@ -1,4 +1,4 @@
-# Ritual Jigsaw
+# Ritual Block Puzzle
 
 A drag-and-drop jigsaw puzzle game for Ritual Chain. Players solve the puzzle in the browser, then submit one transaction that records their completion proof, move count, time, and best score on-chain.
 

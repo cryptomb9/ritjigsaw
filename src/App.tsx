@@ -252,6 +252,7 @@ export default function App() {
             txHash={txHash}
             message={submitMessage}
             walletConnected={Boolean(address)}
+            puzzle={activePuzzle}
             onSubmit={handleSubmit}
           />
         </div>

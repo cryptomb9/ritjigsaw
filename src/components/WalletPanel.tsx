@@ -34,7 +34,7 @@ export function WalletPanel({
     <section className="top-panel" aria-label="Wallet and network status">
       <div className="brand-block">
         <span className="eyebrow">Ritual Chain</span>
-        <h1>Ritual Jigsaw</h1>
+        <h1>Ritual Block Puzzle</h1>
       </div>
 
       <div className="connection-strip">

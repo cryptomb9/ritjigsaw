@@ -10,7 +10,7 @@ const IMAGE_EXTENSIONS = new Set([".gif", ".jpeg", ".jpg", ".png", ".svg", ".web
 const STABLE_OVERRIDES = {
   "ritual-placeholder.svg": {
     id: 1,
-    title: "Ritual Jigsaw",
+    title: "Ritual Block Puzzle",
     imageAlt: "Ritual themed geometric puzzle artwork",
     imageURI: "ritual-placeholder-v1",
     layoutSeed: "ritual-jigsaw:v1:ritual-placeholder:4x4",

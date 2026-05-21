@@ -1,25 +1,42 @@
 import { Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-const MUSIC_SRC = "/audio/music.mp3";
+const MUSIC_PLAYLIST = [
+  "/audio/experience.mpeg",
+  "/audio/icarus.mpeg",
+  "/audio/marriage-of-figaro.mpeg",
+];
 
 export function MusicControl() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const trackIndexRef = useRef(0);
+  const enabledRef = useRef(true);
   const [enabled, setEnabled] = useState(true);
   const [blocked, setBlocked] = useState(false);
 
   useEffect(() => {
-    const audio = new Audio(MUSIC_SRC);
-    audio.loop = true;
+    const audio = new Audio(MUSIC_PLAYLIST[0]);
+    audio.loop = false;
     audio.volume = 0.42;
     audioRef.current = audio;
+
+    function playNextTrack() {
+      trackIndexRef.current = (trackIndexRef.current + 1) % MUSIC_PLAYLIST.length;
+      audio.src = MUSIC_PLAYLIST[trackIndexRef.current];
+
+      if (enabledRef.current) {
+        void playAudio(audio);
+      }
+    }
+
+    audio.addEventListener("ended", playNextTrack);
 
     if (enabled) {
       void playAudio(audio);
     }
 
     function resumeAfterGesture() {
-      if (enabled && audio.paused) {
+      if (enabledRef.current && audio.paused) {
         void playAudio(audio);
       }
     }
@@ -28,6 +45,7 @@ export function MusicControl() {
 
     return () => {
       window.removeEventListener("pointerdown", resumeAfterGesture);
+      audio.removeEventListener("ended", playNextTrack);
       audio.pause();
       audioRef.current = null;
     };
@@ -55,11 +73,13 @@ export function MusicControl() {
 
     if (enabled) {
       audio.pause();
+      enabledRef.current = false;
       setEnabled(false);
       setBlocked(false);
       return;
     }
 
+    enabledRef.current = true;
     setEnabled(true);
     void playAudio(audio);
   }

@@ -1,7 +1,7 @@
-import { CheckCircle2, ExternalLink, Loader2, Send, TriangleAlert } from "lucide-react";
+import { CheckCircle2, Download, ExternalLink, Loader2, Send, Sparkles, TriangleAlert } from "lucide-react";
 import type { Hash } from "viem";
 import { explorerTxUrl, hasPuzzleContract } from "../lib/ritual";
-import { formatDuration, type SolveStats } from "../lib/puzzle";
+import { formatDuration, type PuzzleDefinition, type SolveStats } from "../lib/puzzle";
 
 export type SubmitPhase = "idle" | "ready" | "wallet" | "chain" | "confirmed" | "error";
 
@@ -11,6 +11,7 @@ type CompletionPanelProps = {
   txHash: Hash | null;
   message: string | null;
   walletConnected: boolean;
+  puzzle: PuzzleDefinition;
   onSubmit(): void;
 };
 
@@ -20,6 +21,7 @@ export function CompletionPanel({
   txHash,
   message,
   walletConnected,
+  puzzle,
   onSubmit,
 }: CompletionPanelProps) {
   const contractReady = hasPuzzleContract();
@@ -68,6 +70,25 @@ export function CompletionPanel({
           <ExternalLink size={16} />
           {txHash.slice(0, 10)}...{txHash.slice(-8)}
         </a>
+      ) : null}
+
+      {phase === "confirmed" && stats ? (
+        <div className="win-card">
+          <div className="win-art">
+            <img src={puzzle.imageUrl} alt={puzzle.imageAlt} />
+          </div>
+          <div className="win-copy">
+            <span className="eyebrow">Complete</span>
+            <strong>
+              <Sparkles size={16} />
+              You solved it
+            </strong>
+          </div>
+          <a className="secondary-button download-button" href={puzzle.imageUrl} download>
+            <Download size={16} />
+            Download
+          </a>
+        </div>
       ) : null}
     </section>
   );

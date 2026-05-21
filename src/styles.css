@@ -958,6 +958,53 @@ dd {
   font-size: 0.84rem;
 }
 
+.win-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+}
+
+.win-art {
+  width: 76px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: #000000;
+}
+
+.win-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.win-copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.win-copy strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #f3f4f6;
+  font-size: 1rem;
+}
+
+.download-button {
+  min-height: 40px;
+  text-decoration: none;
+}
+
 .spin {
   animation: spin 900ms linear infinite;
 }
@@ -1191,7 +1238,7 @@ dd {
 
   .app-shell.in-game-room .art-preview {
     margin-top: 4px;
-    max-height: min(24svh, calc(100svw - 188px));
+    max-height: min(15svh, calc(100svw - 230px));
   }
 
   .app-shell.in-game-room .art-preview img {
@@ -1207,8 +1254,8 @@ dd {
 
   .app-shell.in-game-room .stats-grid div,
   .app-shell.in-game-room .completion-stats div {
-    min-height: 30px;
-    padding: 5px;
+    min-height: 28px;
+    padding: 4px 5px;
   }
 
   .app-shell.in-game-room dt {
@@ -1254,6 +1301,26 @@ dd {
 
   .app-shell.in-game-room .submit-status {
     gap: 7px;
+  }
+
+  .app-shell.in-game-room .win-card {
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    gap: 6px;
+    padding: 5px;
+  }
+
+  .app-shell.in-game-room .win-art {
+    width: 40px;
+  }
+
+  .app-shell.in-game-room .win-copy strong {
+    font-size: 0.76rem;
+  }
+
+  .app-shell.in-game-room .download-button {
+    min-height: 32px;
+    padding: 0 8px;
+    font-size: 0.72rem;
   }
 
   .app-shell.in-game-room .submit-label-full {
@@ -1359,7 +1426,7 @@ dd {
 
   .art-preview {
     margin-top: 4px;
-    max-height: min(29vw, calc(100svh - 210px));
+    max-height: min(18vw, calc(100svh - 238px));
   }
 
   .art-preview img {
@@ -1426,6 +1493,20 @@ dd {
 
   .submit-status {
     gap: 8px;
+  }
+
+  .game-room .win-card {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .game-room .win-art {
+    width: 44px;
+  }
+
+  .game-room .win-copy strong {
+    font-size: 0.78rem;
   }
 
   .game-room .submit-label-full {
